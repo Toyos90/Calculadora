@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" th:rel="stylesheet" th:href="@{/css/styles.css}">
+	<title>Calculadora</title>
+</head>
+
+<body>
+<div class="calculator">
+	<div class="display">
+		<div id="prime">0</div>
+		<div id="simbolo"></div>
+		<div id="segund"></div>
+	</div>
+	<div class="keys">
+		<button onclick="borrar()">C</button>
+		<button onclick="elegir('/')">/</button>
+		<button onclick="elegir('X')">X</button>
+		<button onclick="elegir('-')">-</button>
+		<button onclick="sumar(7)">7</button>
+		<button onclick="sumar(8)">8</button>
+		<button onclick="sumar(9)">9</button>
+		<button onclick="elegir('+')">+</button>
+		<button onclick="sumar(4)">4</button>
+		<button onclick="sumar(5)">5</button>
+		<button onclick="sumar(6)">6</button>
+		<button onclick="calcular()">=</button>
+		<button onclick="sumar(1)">1</button>
+		<button onclick="sumar(2)">2</button>
+		<button onclick="sumar(3)">3</button>
+		<button onclick="sumar(0)">0</button>
+	</div>
+</div>
+</body>
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</html>
